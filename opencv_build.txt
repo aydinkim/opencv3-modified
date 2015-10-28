@@ -1,0 +1,77 @@
+*Linux build
+
+1. opencv root/cmake -DBUILD_EXAMPLES=ON .
+   cd samples/cpp
+   make
+   get output in opencv root/bin
+
+2. opencv root/cmake .
+   cd samples
+   cmake -DOpenCV_DIR=./../ .
+   make
+   get output in opencv root/samples/cpp
+
+3. block CV_ASSERT in stitcing_detailed.cpp(818)
+
+4. ENABLE_LOG 1 -> in module/stitching/include/opencv2/stitching/detail/util.hpp
+
+
+*android build
+install ant
+set JAVA_HOME to jdk path
+set ANDROID_NDK & ANDROID_SDK
+(in this computer in is not enough to set standalone toolchain only)
+
+ENABLE_LOG 1 -> in module/stitching/include/opencv2/stitching/detail/util.hpp
+StringStream must be changed to std::stringstrem -> in modules/stitching/include/opencv2/stitching/detail/util.hpp
+
+in cmake_android_arm.sh
+cmake  -DBUILD_SHARED_LIBS=OFF -DOPENCV_EXTRA_MODULES_PATH=/home/aydinkim/clab/opencv_contrib/modules -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON -DCMAKE_TOOLCHAIN_FILE=../android/android.toolchain.cmake $@ ../..
+
+*trouble shooting
+fix build err in opencv_contrib (see below)
+
+diff --git a/modules/ximgproc/samples/disparity_filtering.cpp b/modules/ximgproc/samples/disparity_filtering.cpp
+index beef61d..ec47cba 100644
+--- a/modules/ximgproc/samples/disparity_filtering.cpp
++++ b/modules/ximgproc/samples/disparity_filtering.cpp
+@@ -167,7 +167,7 @@ int main(int argc, char** argv)
+             left_matcher->setP1(24*wsize*wsize);
+             left_matcher->setP2(96*wsize*wsize);
+             left_matcher->setPreFilterCap(63);
+-            left_matcher->setMode(StereoSGBM::MODE_SGBM_3WAY);
++            //left_matcher->setMode(StereoSGBM::MODE_SGBM_3WAY);
+             wls_filter = createDisparityWLSFilter(left_matcher);
+             Ptr<StereoMatcher> right_matcher = createRightMatcher(left_matcher);
+ 
+@@ -232,7 +232,7 @@ int main(int argc, char** argv)
+             matcher->setSpeckleWindowSize(0);
+             matcher->setP1(24*wsize*wsize);
+             matcher->setP2(96*wsize*wsize);
+-            matcher->setMode(StereoSGBM::MODE_SGBM_3WAY);
++            //matcher->setMode(StereoSGBM::MODE_SGBM_3WAY);
+             ROI = computeROI(left_for_matcher.size(),matcher);
+             wls_filter = createDisparityWLSFilterGeneric(false);
+             wls_filter->setDepthDiscontinuityRadius((int)ceil(0.5*wsize));
+diff --git a/modules/ximgproc/src/sparse_match_interpolators.cpp b/modules/ximgproc/src/sparse_match_interpolators.cpp
+index d5d8d1f..f48060e 100644
+--- a/modules/ximgproc/src/sparse_match_interpolators.cpp
++++ b/modules/ximgproc/src/sparse_match_interpolators.cpp
+@@ -168,9 +168,9 @@ Ptr<EdgeAwareInterpolatorImpl> EdgeAwareInterpolatorImpl::create()
+ void EdgeAwareInterpolatorImpl::interpolate(InputArray from_image, InputArray from_points, InputArray, InputArray to_po
+ {
+     CV_Assert( !from_image.empty() && (from_image.depth() == CV_8U) && (from_image.channels() == 3 || from_image.channe
+-    CV_Assert( !from_points.empty() && from_points.isVector() &&
+-               !to_points  .empty() && to_points  .isVector() &&
+-               from_points.sameSize(to_points) );
++//    CV_Assert( !from_points.empty() && from_points.isVector() &&
++//               !to_points.empty() && to_points.isVector() &&
++//               from_points.sameSize(to_points) );
+ 
+     w = from_image.cols();
+     h = from_image.rows();
+@@ -878,4 +878,4 @@ bool operator<(const SparseMatch& lhs,const SparseMatch& rhs)
+ }
+ 
+ }
+

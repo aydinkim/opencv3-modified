@@ -1,0 +1,2 @@
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_text.a  CMakeFiles/opencv_text.dir/src/ocr_beamsearch_decoder.cpp.o CMakeFiles/opencv_text.dir/src/erfilter.cpp.o CMakeFiles/opencv_text.dir/src/ocr_tesseract.cpp.o CMakeFiles/opencv_text.dir/src/ocr_hmm_decoder.cpp.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_text.a

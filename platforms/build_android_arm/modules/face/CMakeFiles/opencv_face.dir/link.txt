@@ -1,0 +1,2 @@
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_face.a  CMakeFiles/opencv_face.dir/src/facerec.cpp.o CMakeFiles/opencv_face.dir/src/eigen_faces.cpp.o CMakeFiles/opencv_face.dir/src/fisher_faces.cpp.o CMakeFiles/opencv_face.dir/src/lbph_faces.cpp.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_face.a

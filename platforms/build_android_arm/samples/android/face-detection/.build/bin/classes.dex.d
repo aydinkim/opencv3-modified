@@ -1,0 +1,22 @@
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes.dex : \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$id.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$layout.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$styleable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$attr.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/DetectionBasedTracker.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$id.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$raw.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$layout.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$styleable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/FdActivity$1.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$attr.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/BuildConfig.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$drawable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/R$string.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/samples/facedetect/FdActivity.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$drawable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/classes/org/opencv/R$string.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/dexedLibs/classes-c4d171a21b159f204094194523bebb4b.jar \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/face-detection/.build/bin/dexedLibs/annotations-20e6278fad7dd0d01eb078d8cad83c04.jar \

@@ -1,0 +1,2 @@
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_xphoto.a  CMakeFiles/opencv_xphoto.dir/src/simple_color_balance.cpp.o CMakeFiles/opencv_xphoto.dir/src/inpainting.cpp.o CMakeFiles/opencv_xphoto.dir/src/grayworld_white_balance.cpp.o CMakeFiles/opencv_xphoto.dir/src/dct_image_denoising.cpp.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_xphoto.a

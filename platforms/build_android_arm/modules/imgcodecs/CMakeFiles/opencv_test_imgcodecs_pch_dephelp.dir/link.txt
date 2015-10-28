@@ -1,0 +1,2 @@
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_test_imgcodecs_pch_dephelp.a  CMakeFiles/opencv_test_imgcodecs_pch_dephelp.dir/opencv_test_imgcodecs_pch_dephelp.cxx.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_test_imgcodecs_pch_dephelp.a

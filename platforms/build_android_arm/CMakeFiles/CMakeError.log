@@ -1,0 +1,98 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec37760823/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec37760823.dir/build.make CMakeFiles/cmTryCompileExec37760823.dir/build
+make[1]: Entering directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec37760823.dir/TestEndianess.c.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden  -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG -fPIE -isystem /home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm/usr/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward    -o CMakeFiles/cmTryCompileExec37760823.dir/TestEndianess.c.o   -c /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec37760823
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec37760823.dir/link.txt --verbose=1
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden  -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG   -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec37760823.dir/TestEndianess.c.o -o cmTryCompileExec37760823  -L/libs/armeabi-v7a -rdynamic  "/home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libsupc++.a"
+make[1]: Leaving directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1294494502/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1294494502.dir/build.make CMakeFiles/cmTryCompileExec1294494502.dir/build
+make[1]: Entering directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1294494502.dir/CheckIncludeFile.c.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden  -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG -fPIE -isystem /home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm/usr/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward    -o CMakeFiles/cmTryCompileExec1294494502.dir/CheckIncludeFile.c.o   -c /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1294494502.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1294494502/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2917718294/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2917718294.dir/build.make CMakeFiles/cmTryCompileExec2917718294.dir/build
+make[1]: Entering directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2917718294.dir/CheckFunctionExists.c.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=jbg_newlen -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG -fPIE -isystem /home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm/usr/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward    -o CMakeFiles/cmTryCompileExec2917718294.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+Linking C executable cmTryCompileExec2917718294
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2917718294.dir/link.txt --verbose=1
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=jbg_newlen -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG   -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,--gc-sections -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,nocopyreloc CMakeFiles/cmTryCompileExec2917718294.dir/CheckFunctionExists.c.o -o cmTryCompileExec2917718294  -L/libs/armeabi-v7a -rdynamic  "/home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libsupc++.a"
+CMakeFiles/cmTryCompileExec2917718294.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'jbg_newlen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2917718294] Error 1
+make[1]: Leaving directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2917718294/fast] Error 2
+
+
+Determining if the include file search.h exists failed with the following output:
+Change Dir: /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3722949298/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3722949298.dir/build.make CMakeFiles/cmTryCompileExec3722949298.dir/build
+make[1]: Entering directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3722949298.dir/CheckIncludeFile.c.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -fpic -Wno-psabi --sysroot=/home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -fvisibility=hidden  -mthumb -fomit-frame-pointer -fno-strict-aliasing -O3 -DNDEBUG -fPIE -isystem /home/aydinkim/Android/Sdk/ndk-bundle/platforms/android-8/arch-arm/usr/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/aydinkim/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward    -o CMakeFiles/cmTryCompileExec3722949298.dir/CheckIncludeFile.c.o   -c /home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: search.h: No such file or directory
+ #include <search.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3722949298.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3722949298/fast] Error 2
+
+

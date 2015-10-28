@@ -1,0 +1,347 @@
+ok: CLASS ..Bioinspired : 
+
+
+===== Header: /home/aydinkim/clab/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired.hpp =====
+Namespaces: set([])
+
+
+===== Header: /home/aydinkim/clab/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/retina.hpp =====
+Namespaces: set([u'cv', u'cv.bioinspired'])
+
+--- Incoming ---
+[u'const cv.bioinspired.RETINA_COLOR_RANDOM', '0', [], []]
+ok: CONST RETINA_COLOR_RANDOM=0
+
+--- Incoming ---
+[u'const cv.bioinspired.RETINA_COLOR_DIAGONAL', '1', [], []]
+ok: CONST RETINA_COLOR_DIAGONAL=1
+
+--- Incoming ---
+[u'const cv.bioinspired.RETINA_COLOR_BAYER', '2', [], []]
+ok: CONST RETINA_COLOR_BAYER=2
+
+--- Incoming ---
+[u'class cv.bioinspired.Retina', ': cv::Algorithm', [], []]
+ok: CLASS cv.bioinspired..Retina : Algorithm
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.getInputSize', u'Size', [], [], u'Size']
+ok: FUNC <Size cv.bioinspired.Retina.getInputSize []>
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.getOutputSize', u'Size', [], [], u'Size']
+ok: FUNC <Size cv.bioinspired.Retina.getOutputSize []>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.setup',
+    u'void',
+    [],
+    [   [u'String', u'retinaParameterFile', u'""', []],
+        [u'bool', u'applyDefaultSetupOnFailure', u'true', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.setup [ARG String retinaParameterFile="", ARG bool applyDefaultSetupOnFailure=true]>
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.printSetup', u'String', [], [], u'String']
+ok: FUNC <String cv.bioinspired.Retina.printSetup []>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.write',
+    u'void',
+    [],
+    [[u'String', u'fs', u'', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.write [ARG String fs=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.setupOPLandIPLParvoChannel',
+    u'void',
+    [],
+    [   [u'bool', u'colorMode', u'true', []],
+        [u'bool', u'normaliseOutput', u'true', []],
+        [u'float', u'photoreceptorsLocalAdaptationSensitivity', u'0.7f', []],
+        [u'float', u'photoreceptorsTemporalConstant', u'0.5f', []],
+        [u'float', u'photoreceptorsSpatialConstant', u'0.53f', []],
+        [u'float', u'horizontalCellsGain', u'0.f', []],
+        [u'float', u'HcellsTemporalConstant', u'1.f', []],
+        [u'float', u'HcellsSpatialConstant', u'7.f', []],
+        [u'float', u'ganglionCellsSensitivity', u'0.7f', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.setupOPLandIPLParvoChannel [ARG bool colorMode=true, ARG bool normaliseOutput=true, ARG float photoreceptorsLocalAdaptationSensitivity=0.7f, ARG float photoreceptorsTemporalConstant=0.5f, ARG float photoreceptorsSpatialConstant=0.53f, ARG float horizontalCellsGain=0.f, ARG float HcellsTemporalConstant=1.f, ARG float HcellsSpatialConstant=7.f, ARG float ganglionCellsSensitivity=0.7f]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.setupIPLMagnoChannel',
+    u'void',
+    [],
+    [   [u'bool', u'normaliseOutput', u'true', []],
+        [u'float', u'parasolCells_beta', u'0.f', []],
+        [u'float', u'parasolCells_tau', u'0.f', []],
+        [u'float', u'parasolCells_k', u'7.f', []],
+        [u'float', u'amacrinCellsTemporalCutFrequency', u'1.2f', []],
+        [u'float', u'V0CompressionParameter', u'0.95f', []],
+        [u'float', u'localAdaptintegration_tau', u'0.f', []],
+        [u'float', u'localAdaptintegration_k', u'7.f', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.setupIPLMagnoChannel [ARG bool normaliseOutput=true, ARG float parasolCells_beta=0.f, ARG float parasolCells_tau=0.f, ARG float parasolCells_k=7.f, ARG float amacrinCellsTemporalCutFrequency=1.2f, ARG float V0CompressionParameter=0.95f, ARG float localAdaptintegration_tau=0.f, ARG float localAdaptintegration_k=7.f]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.run',
+    u'void',
+    [],
+    [['Mat', u'inputImage', '', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.run [ARG Mat inputImage=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.applyFastToneMapping',
+    u'void',
+    [],
+    [   ['Mat', u'inputImage', '', []],
+        ['Mat', u'outputToneMappedImage', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.applyFastToneMapping [ARG Mat inputImage=, ARG Mat outputToneMappedImage=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.getParvo',
+    u'void',
+    [],
+    [['Mat', u'retinaOutput_parvo', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.getParvo [ARG Mat retinaOutput_parvo=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.getParvoRAW',
+    u'void',
+    [],
+    [['Mat', u'retinaOutput_parvo', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.getParvoRAW [ARG Mat retinaOutput_parvo=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.getMagno',
+    u'void',
+    [],
+    [['Mat', u'retinaOutput_magno', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.getMagno [ARG Mat retinaOutput_magno=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.getMagnoRAW',
+    u'void',
+    [],
+    [['Mat', u'retinaOutput_magno', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.getMagnoRAW [ARG Mat retinaOutput_magno=]>
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.getMagnoRAW', u'Mat', [], [], u'Mat']
+ok: FUNC <Mat cv.bioinspired.Retina.getMagnoRAW []>
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.getParvoRAW', u'Mat', [], [], u'Mat']
+ok: FUNC <Mat cv.bioinspired.Retina.getParvoRAW []>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.setColorSaturation',
+    u'void',
+    [],
+    [   [u'bool', u'saturateColors', u'true', []],
+        [u'float', u'colorSaturationValue', u'4.0f', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.setColorSaturation [ARG bool saturateColors=true, ARG float colorSaturationValue=4.0f]>
+
+--- Incoming ---
+[u'cv.bioinspired.Retina.clearBuffers', u'void', [], [], u'void']
+ok: FUNC <void cv.bioinspired.Retina.clearBuffers []>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.activateMovingContoursProcessing',
+    u'void',
+    [],
+    [[u'bool', u'activate', u'', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.activateMovingContoursProcessing [ARG bool activate=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.Retina.activateContoursProcessing',
+    u'void',
+    [],
+    [[u'bool', u'activate', u'', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.Retina.activateContoursProcessing [ARG bool activate=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.createRetina',
+    u'Ptr_Retina',
+    [],
+    [[u'Size', u'inputSize', u'', []]],
+    u'Ptr<Retina>']
+ok: FUNC <Ptr_Retina cv.bioinspired..createRetina [ARG Size inputSize=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.createRetina',
+    u'Ptr_Retina',
+    [],
+    [   [u'Size', u'inputSize', u'', []],
+        [u'bool', u'colorMode', u'', []],
+        [u'int', u'colorSamplingMethod', u'RETINA_COLOR_BAYER', []],
+        [u'bool', u'useRetinaLogSampling', u'false', []],
+        [u'float', u'reductionFactor', u'1.0f', []],
+        [u'float', u'samplingStrenght', u'10.0f', []]],
+    u'Ptr<Retina>']
+ok: FUNC <Ptr_Retina cv.bioinspired..createRetina [ARG Size inputSize=, ARG bool colorMode=, ARG int colorSamplingMethod=RETINA_COLOR_BAYER, ARG bool useRetinaLogSampling=false, ARG float reductionFactor=1.0f, ARG float samplingStrenght=10.0f]>
+
+
+===== Header: /home/aydinkim/clab/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/retinafasttonemapping.hpp =====
+Namespaces: set([u'cv', u'cv.bioinspired'])
+
+--- Incoming ---
+[u'class cv.bioinspired.RetinaFastToneMapping', ': cv::Algorithm', [], []]
+ok: CLASS cv.bioinspired..RetinaFastToneMapping : Algorithm
+
+--- Incoming ---
+[   u'cv.bioinspired.RetinaFastToneMapping.applyFastToneMapping',
+    u'void',
+    [],
+    [   ['Mat', u'inputImage', '', []],
+        ['Mat', u'outputToneMappedImage', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.RetinaFastToneMapping.applyFastToneMapping [ARG Mat inputImage=, ARG Mat outputToneMappedImage=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.RetinaFastToneMapping.setup',
+    u'void',
+    [],
+    [   [u'float', u'photoreceptorsNeighborhoodRadius', u'3.f', []],
+        [u'float', u'ganglioncellsNeighborhoodRadius', u'1.f', []],
+        [u'float', u'meanLuminanceModulatorK', u'1.f', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.RetinaFastToneMapping.setup [ARG float photoreceptorsNeighborhoodRadius=3.f, ARG float ganglioncellsNeighborhoodRadius=1.f, ARG float meanLuminanceModulatorK=1.f]>
+
+--- Incoming ---
+[   u'cv.bioinspired.createRetinaFastToneMapping',
+    u'Ptr_RetinaFastToneMapping',
+    [],
+    [[u'Size', u'inputSize', u'', []]],
+    u'Ptr<RetinaFastToneMapping>']
+ok: FUNC <Ptr_RetinaFastToneMapping cv.bioinspired..createRetinaFastToneMapping [ARG Size inputSize=]>
+
+
+===== Header: /home/aydinkim/clab/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/bioinspired.hpp =====
+Namespaces: set([u'cv', u'cv.bioinspired'])
+
+
+===== Header: /home/aydinkim/clab/opencv_contrib/modules/bioinspired/include/opencv2/bioinspired/transientareassegmentationmodule.hpp =====
+Namespaces: set([u'cv', u'cv.bioinspired'])
+
+--- Incoming ---
+[   u'class cv.bioinspired.TransientAreasSegmentationModule',
+    ': cv::Algorithm',
+    [],
+    []]
+ok: CLASS cv.bioinspired..TransientAreasSegmentationModule : Algorithm
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.getSize',
+    u'Size',
+    [],
+    [],
+    u'Size']
+ok: FUNC <Size cv.bioinspired.TransientAreasSegmentationModule.getSize []>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.setup',
+    u'void',
+    [],
+    [   [u'String', u'segmentationParameterFile', u'""', []],
+        [u'bool', u'applyDefaultSetupOnFailure', u'true', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.TransientAreasSegmentationModule.setup [ARG String segmentationParameterFile="", ARG bool applyDefaultSetupOnFailure=true]>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.printSetup',
+    u'String',
+    [],
+    [],
+    u'String']
+ok: FUNC <String cv.bioinspired.TransientAreasSegmentationModule.printSetup []>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.write',
+    u'void',
+    [],
+    [[u'String', u'fs', u'', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.TransientAreasSegmentationModule.write [ARG String fs=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.run',
+    u'void',
+    [],
+    [['Mat', u'inputToSegment', '', []], [u'int', u'channelIndex', u'0', []]],
+    u'void']
+ok: FUNC <void cv.bioinspired.TransientAreasSegmentationModule.run [ARG Mat inputToSegment=, ARG int channelIndex=0]>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.getSegmentationPicture',
+    u'void',
+    [],
+    [['Mat', u'transientAreas', '', ['/O']]],
+    u'void']
+ok: FUNC <void cv.bioinspired.TransientAreasSegmentationModule.getSegmentationPicture [ARG Mat transientAreas=]>
+
+--- Incoming ---
+[   u'cv.bioinspired.TransientAreasSegmentationModule.clearAllBuffers',
+    u'void',
+    [],
+    [],
+    u'void']
+ok: FUNC <void cv.bioinspired.TransientAreasSegmentationModule.clearAllBuffers []>
+
+--- Incoming ---
+[   u'cv.bioinspired.createTransientAreasSegmentationModule',
+    u'Ptr_TransientAreasSegmentationModule',
+    [],
+    [[u'Size', u'inputSize', u'', []]],
+    u'Ptr<TransientAreasSegmentationModule>']
+ok: FUNC <Ptr_TransientAreasSegmentationModule cv.bioinspired..createTransientAreasSegmentationModule [ARG Size inputSize=]>
+
+
+===== Generating... =====
+CLASS cv.bioinspired..RetinaFastToneMapping : Algorithm
+FUNC <void cv.bioinspired.RetinaFastToneMapping.applyFastToneMapping [ARG Mat inputImage=, ARG Mat outputToneMappedImage=]>
+FUNC <void cv.bioinspired.RetinaFastToneMapping.setup [ARG float photoreceptorsNeighborhoodRadius=3.f, ARG float ganglioncellsNeighborhoodRadius=1.f, ARG float meanLuminanceModulatorK=1.f]>
+CLASS cv.bioinspired..TransientAreasSegmentationModule : Algorithm
+FUNC <String cv.bioinspired.TransientAreasSegmentationModule.printSetup []>
+FUNC <void cv.bioinspired.TransientAreasSegmentationModule.write [ARG String fs=]>
+FUNC <void cv.bioinspired.TransientAreasSegmentationModule.setup [ARG String segmentationParameterFile="", ARG bool applyDefaultSetupOnFailure=true]>
+FUNC <Size cv.bioinspired.TransientAreasSegmentationModule.getSize []>
+FUNC <void cv.bioinspired.TransientAreasSegmentationModule.run [ARG Mat inputToSegment=, ARG int channelIndex=0]>
+FUNC <void cv.bioinspired.TransientAreasSegmentationModule.clearAllBuffers []>
+FUNC <void cv.bioinspired.TransientAreasSegmentationModule.getSegmentationPicture [ARG Mat transientAreas=]>
+CLASS cv.bioinspired..Retina : Algorithm
+FUNC <void cv.bioinspired.Retina.setupIPLMagnoChannel [ARG bool normaliseOutput=true, ARG float parasolCells_beta=0.f, ARG float parasolCells_tau=0.f, ARG float parasolCells_k=7.f, ARG float amacrinCellsTemporalCutFrequency=1.2f, ARG float V0CompressionParameter=0.95f, ARG float localAdaptintegration_tau=0.f, ARG float localAdaptintegration_k=7.f]>
+FUNC <void cv.bioinspired.Retina.run [ARG Mat inputImage=]>
+FUNC <void cv.bioinspired.Retina.applyFastToneMapping [ARG Mat inputImage=, ARG Mat outputToneMappedImage=]>
+FUNC <void cv.bioinspired.Retina.getParvo [ARG Mat retinaOutput_parvo=]>
+FUNC <void cv.bioinspired.Retina.getParvoRAW [ARG Mat retinaOutput_parvo=]>
+FUNC <void cv.bioinspired.Retina.getMagno [ARG Mat retinaOutput_magno=]>
+FUNC <void cv.bioinspired.Retina.getMagnoRAW [ARG Mat retinaOutput_magno=]>
+FUNC <Mat cv.bioinspired.Retina.getMagnoRAW []>
+FUNC <Mat cv.bioinspired.Retina.getParvoRAW []>
+FUNC <void cv.bioinspired.Retina.setColorSaturation [ARG bool saturateColors=true, ARG float colorSaturationValue=4.0f]>
+FUNC <void cv.bioinspired.Retina.clearBuffers []>
+FUNC <void cv.bioinspired.Retina.activateMovingContoursProcessing [ARG bool activate=]>
+FUNC <void cv.bioinspired.Retina.activateContoursProcessing [ARG bool activate=]>
+FUNC <void cv.bioinspired.Retina.setup [ARG String retinaParameterFile="", ARG bool applyDefaultSetupOnFailure=true]>
+FUNC <Size cv.bioinspired.Retina.getInputSize []>
+FUNC <Size cv.bioinspired.Retina.getOutputSize []>
+FUNC <String cv.bioinspired.Retina.printSetup []>
+FUNC <void cv.bioinspired.Retina.write [ARG String fs=]>
+FUNC <void cv.bioinspired.Retina.setupOPLandIPLParvoChannel [ARG bool colorMode=true, ARG bool normaliseOutput=true, ARG float photoreceptorsLocalAdaptationSensitivity=0.7f, ARG float photoreceptorsTemporalConstant=0.5f, ARG float photoreceptorsSpatialConstant=0.53f, ARG float horizontalCellsGain=0.f, ARG float HcellsTemporalConstant=1.f, ARG float HcellsSpatialConstant=7.f, ARG float ganglionCellsSensitivity=0.7f]>
+CLASS ..Bioinspired : 
+[CONST RETINA_COLOR_RANDOM=0, CONST RETINA_COLOR_DIAGONAL=1, CONST RETINA_COLOR_BAYER=2]
+FUNC <Ptr_RetinaFastToneMapping cv.bioinspired..createRetinaFastToneMapping [ARG Size inputSize=]>
+FUNC <Ptr_Retina cv.bioinspired..createRetina [ARG Size inputSize=]>
+FUNC <Ptr_Retina cv.bioinspired..createRetina [ARG Size inputSize=, ARG bool colorMode=, ARG int colorSamplingMethod=RETINA_COLOR_BAYER, ARG bool useRetinaLogSampling=false, ARG float reductionFactor=1.0f, ARG float samplingStrenght=10.0f]>
+FUNC <Ptr_TransientAreasSegmentationModule cv.bioinspired..createTransientAreasSegmentationModule [ARG Size inputSize=]>

@@ -1,0 +1,20 @@
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes.dex : \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$id.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$layout.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$styleable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$attr.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$id.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$layout.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$styleable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$attr.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/Tutorial1Activity$1.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/Tutorial1Activity.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/BuildConfig.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$drawable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/samples/tutorial1/R$string.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$drawable.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/classes/org/opencv/R$string.class \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/dexedLibs/classes-c4d171a21b159f204094194523bebb4b.jar \
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/samples/android/tutorial-1-camerapreview/.build/bin/dexedLibs/annotations-20e6278fad7dd0d01eb078d8cad83c04.jar \

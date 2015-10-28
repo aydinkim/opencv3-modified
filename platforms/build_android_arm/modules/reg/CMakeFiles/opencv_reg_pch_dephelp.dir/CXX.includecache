@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/aydinkim/clab/opencv-3.0.0-android/platforms/build_android_arm/modules/reg/opencv_reg_pch_dephelp.cxx
+/home/aydinkim/clab/opencv_contrib/modules/reg/src/precomp.hpp
+-
+
+/home/aydinkim/clab/opencv_contrib/modules/reg/src/precomp.hpp
+

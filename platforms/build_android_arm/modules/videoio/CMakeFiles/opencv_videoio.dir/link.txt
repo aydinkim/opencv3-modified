@@ -1,0 +1,2 @@
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_videoio.a  CMakeFiles/opencv_videoio.dir/src/cap.cpp.o CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_encoder.cpp.o CMakeFiles/opencv_videoio.dir/src/cap_mjpeg_decoder.cpp.o
+/home/aydinkim/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_videoio.a
